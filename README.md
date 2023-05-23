@@ -3,11 +3,7 @@ Moto G(6) Play (Aljeter)
 
 ### Copyrights
 
-Copyright (C) 2023 The LineageOS Project
-
-## Device Tree
-
-Android device configuration for the moto g6 play (**SDM430/msm8937**).
+Copyright (C) 2022 Team Win Recovery Project
 
 ## Device specifications
 
