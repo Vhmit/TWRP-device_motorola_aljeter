@@ -25,6 +25,10 @@ TARGET_BOARD_PLATFORM := msm8937
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_SUFFIX := _64
 
+# File systems
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78B0000 vmalloc=400M
@@ -61,3 +65,5 @@ TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_EXCLUDE_TZDATA := true
+TW_INCLUDE_FUSE_EXFAT := true # exFAT support
+TW_INCLUDE_FUSE_NTFS := true # NTFS support
