@@ -48,3 +48,15 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 BOARD_RAMDISK_USE_LZMA := true
 LZMA_RAMDISK_TARGETS := recovery
+
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+
+# TWRP Configuration
+TW_THEME := portrait_hdpi
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+TW_EXCLUDE_TZDATA := true
